@@ -105,7 +105,7 @@ An example::
 
     class PickleSerializer(slumber.serialize.BaseSerializer):
         key = "pickle"
-        content_type = "x-application/pickle"
+        content_types = "x-application/pickle"
 
         def loads(self, data):
             return pickle.loads(data)
